@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <script>
+      (function () {
+        try {
+          var currentFetch = window.fetch;
+          var target = Object.prototype.hasOwnProperty.call(window, 'fetch')
+            ? window
+            : Object.getPrototypeOf(window);
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function () {
+              return currentFetch;
+            },
+            set: function (v) {
+              currentFetch = v;
+            },
+          });
+          if (target && target !== window) {
+            try {
+              Object.defineProperty(target, 'fetch', {
+                configurable: true,
+                enumerable: true,
+                get: function () {
+                  return currentFetch;
+                },
+                set: function (v) {
+                  currentFetch = v;
+                },
+              });
+            } catch (e2) {}
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Northlanders Guest House, Skardu | Stay in Gilgit-Baltistan</title>
+    <meta
+      name="description"
+      content="Discover Northlanders Guest House in Karphotok, Skardu, Gilgit-Baltistan. View real property and room photographs, check location details, and inquire directly on WhatsApp."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Northlanders Guest House" />
+    <meta property="og:title" content="Northlanders Guest House, Skardu | Stay in Gilgit-Baltistan" />
+    <meta
+      property="og:description"
+      content="Discover Northlanders Guest House in Karphotok, Skardu, Gilgit-Baltistan. View real property and room photographs, check location details, and inquire directly on WhatsApp."
+    />
+    <meta property="og:image" content="/images/836375437.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Northlanders Guest House, Skardu | Stay in Gilgit-Baltistan" />
+    <meta
+      name="twitter:description"
+      content="Discover Northlanders Guest House in Karphotok, Skardu, Gilgit-Baltistan. View real property and room photographs, check location details, and inquire directly on WhatsApp."
+    />
+    <meta name="twitter:image" content="/images/836375437.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "Northlanders Guest House",
+        "description": "Guest house located in Karphotok near Girls High School Skardu, Kargrong, Skardu, Gilgit-Baltistan, Pakistan.",
+        "telephone": "+92 310 9102221",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Karphotok near Girls High School Skardu, Kargrong",
+          "addressLocality": "Skardu",
+          "addressRegion": "Gilgit-Baltistan",
+          "postalCode": "16100",
+          "addressCountry": "PK"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 35.2961314,
+          "longitude": 75.6395321
+        },
+        "image": [
+          "/images/836375437.jpg",
+          "/images/726800997.jpg",
+          "/images/719970613.jpg"
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-[#0F1713] text-[#F4F1EA] antialiased selection:bg-[#E2B857] selection:text-[#0F1713]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

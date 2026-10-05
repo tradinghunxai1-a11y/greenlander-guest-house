@@ -1,0 +1,6 @@
+{
+  "name": "Northlanders Guest House, Skardu",
+  "description": "Discover Northlanders Guest House in Karphotok, Skardu, Gilgit-Baltistan. Explore our rooms, garden views, and plan your stay via WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
